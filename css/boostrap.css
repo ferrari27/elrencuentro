@@ -1,0 +1,231 @@
+/* Estilo global
+-------------------------------------------------- */
+body {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  color: #5a5a5a;
+  background-color: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Carousel*/
+.carousel {
+  margin-bottom: 0rem;
+}
+
+/* Texto carousel */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Size del carousel*/
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  filter: grayscale(50%);
+  filter: brightness(50%);
+}
+
+
+/* RESPONSIVO
+-------------------------------------------------- */
+@media (min-width: 40em) {
+
+  /* texto carousel */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+/* CUSTOM
+-------------------------------------------------- */
+.imgheight {
+  /*height: 21rem;*/
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin-bottom: 25px;
+}
+
+.paddingimg {
+  margin-top: 25px;
+  margin-left: 10px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.margenlogo {
+  margin-right: 14rem;
+  /*margin-left: 2rem;*/
+}
+
+.resize {
+  height: 75px;
+  width: 150px;
+}
+
+.lacosta {
+  height: 75px;
+  margin-top: 25%;
+}
+
+.end {
+  background-color: #e1e8ed;
+}
+
+.footerlogo {
+  height: 150px;
+  width: 150px;
+}
+
+.customnav {
+  transition: background-color 1s ease-in-out;
+}
+
+.enlace {
+  color: #5a5a5a;
+  text-decoration: none;
+}
+
+.titulo1 {
+  font-size: 50px;
+}
+
+@media (max-width: 767px) {
+  .titulo1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo1 {
+    font-size: 1.25rem;
+  }
+}
+
+
+.sub {
+  font-size: 28px;
+}
+
+@media (max-width: 1014px) {
+  .sub {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 817px) {
+  .sub {
+    font-size: 18px;
+  }
+}
+
+.animate__animated.animate__slideInLeft {
+  --animate-duration: 4s;
+}
+
+.animate__animated.animate__slideInRight {
+  --animate-duration: 4s;
+}
+
+.transparent {
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+
+.opaque {
+  background-color: rgba(255, 0, 0, 1) !important;
+}
+
+/* FADE IN
+-------------------------------------------------- */
+.fade-in {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
