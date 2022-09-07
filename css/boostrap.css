@@ -1,6 +1,7 @@
 /* Estilo global
 -------------------------------------------------- */
 body {
+  overflow-x: hidden;
   padding-top: 0rem;
   padding-bottom: 0rem;
   color: #5a5a5a;
