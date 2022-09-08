@@ -22,9 +22,9 @@ function screensize() {
 };
 
 //Script de opacidad del header
-window.onscroll = function() {
+window.onscroll = function () {
     scrollFunction();
-    eliminarWidget();
+    removeWidget();
 };
 
 function scrollFunction() {
@@ -36,13 +36,16 @@ function scrollFunction() {
 }
 
 //Remover marcadeagua
-function removeWidget(){
+function removeWidget() {
     var parentWidget = document.getElementById("eapps-number-counter-79004f85-59c0-4ec4-af6d-566d1421fb55");
-//    console.log(parentWidget);
+    //    console.log(parentWidget);
     var child1 = parentWidget.firstChild;
-//    console.log(child1);
-    var child2 = child1.lastChild;
-//    console.log(child2);
-    child2.remove();
+    //    console.log(child1);
+    if (child1.childElementCount == 2) {
+        var child2 = child1.lastChild;
+        //    console.log(child2);
+        child2.remove();
+    }
+    
 
 }
