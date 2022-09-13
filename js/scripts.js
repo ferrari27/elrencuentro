@@ -6,7 +6,7 @@ window.onload = function () {
 window.onresize = function () {
     screensize();
 };
-
+/*
 function screensize() {
     if (window.innerWidth > 1100) {
         document.getElementById("logo").setAttribute('style', 'margin-right: 14rem');
@@ -19,7 +19,7 @@ function screensize() {
         element.classList.remove("container-fluid");
         element.classList.add("container");
     }
-};
+};*/
 
 //Script de opacidad del header
 window.onscroll = function () {

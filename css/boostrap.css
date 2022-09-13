@@ -34,38 +34,23 @@ body {
 }
 
 
-/* RESPONSIVO
--------------------------------------------------- */
-@media (min-width: 40em) {
 
-  /* texto carousel */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
 
 
 /* CUSTOM
 -------------------------------------------------- */
 .imgheight {
-  /*height: 21rem;*/
+  height: 25rem;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  /*height: 100%;*/
   margin-bottom: 25px;
+  width: 70%;
 }
 
 .paddingimg {
-  margin-top: 25px;
-  margin-left: 10px;
+  margin-top: 28px;
+  margin-left: 190px;
   border-width: 1px;
   border-style: solid;
 }
@@ -102,12 +87,34 @@ body {
 .customnav {
   transition: background-color 1s ease-in-out;
 }
-
-.enlace {
+.enlace{
   color: #5a5a5a;
   text-decoration: none;
+  padding: 5px;
 }
+.icon {
+  font-size: 40px;
+}
+.gmail{
+ 
+  color: #096daa;
+}
+.insta{
+border-radius: 3px;
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 
+}
+.azul{
+  color: #3b5998;
+}
+.verde{
+  color: #00bb2d;
+}
 .titulo1 {
   font-size: 50px;
 }
@@ -156,6 +163,68 @@ body {
 .opaque {
   background-color: rgba(255, 0, 0, 1) !important;
 }
+
+.txt{
+  padding-right: 325px; 
+  padding-top: 20px;
+}
+.tyt{
+  margin-top: 76px;
+}
+
+/* RESPONSIVO
+-------------------------------------------------- */
+
+@media (max-width: 92em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+  .imgheight{
+    width: 90%;
+    
+  }
+  .paddingimg {
+    margin-left: 40px;
+  }
+.txt{ 
+  padding-right:45px;
+ 
+}
+.hotmail{
+  font-size: 12px;
+}
+}
+
+@media (max-width: 60em) {
+
+  /* texto carousel */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .imgheight{
+    width: 90%;
+  }
+
+
+.txt{
+  margin-left: 0px;
+  padding-right:0px; 
+}
+.paddingimg {
+  margin-left: 0px;
+}
+.t{
+  margin-left: 0px;
+}
+.tyt{
+  margin-top: 20px;
+}
+
+}
+
+
 
 /* FADE IN
 -------------------------------------------------- */
