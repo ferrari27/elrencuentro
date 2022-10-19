@@ -49,3 +49,16 @@ function removeWidget() {
     
 
 }
+
+function validar(){
+    var resultado=true;
+    var ObjElemento=document.getElementById(nombre);
+    
+    if(isNaN(ObjElemento.value)==true || /^[1-9]/.test(ObjElemento.value)==false)
+      {
+       alert('Campo ' + ObjElemento.name + ' incorrecto. ');
+       resultado=false; 
+      }
+    
+    return resultado;
+}

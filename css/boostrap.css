@@ -19,10 +19,7 @@ body {
   z-index: 10;
 }
 
-/* Size del carousel*/
-.carousel-item {
-  height: 100vh;
-}
+
 
 .carousel-item>img {
   position: absolute;
@@ -32,10 +29,29 @@ body {
   filter: grayscale(50%);
   filter: brightness(50%);
 }
+.hcarousel{
+ height: 100vh;
 
+}
+.a1{
+  margin-left: 5%;
+  margin-right: 5%;
 
+}
 
+img.img-fluid {
+  width: 100%;
+  position: relative;
+  border-radius: 0.25rem !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 256px;
+}
 
+.card{
+  margin-right: 15px;
+}
 
 /* CUSTOM
 -------------------------------------------------- */
@@ -45,12 +61,12 @@ body {
   background-size: cover;
   /*height: 100%;*/
   margin-bottom: 25px;
-  width: 70%;
+  width: 90%;
 }
 
 .paddingimg {
-  margin-top: 28px;
-  margin-left: 190px;
+  margin-top: 30px;
+  margin-left: 7px;
   border-width: 1px;
   border-style: solid;
 }
@@ -71,8 +87,8 @@ body {
 }
 
 .lacosta {
-  height: 75px;
-  margin-top: 25%;
+  height: 90px;
+  margin-top: 33%;
 }
 
 .end {
@@ -90,24 +106,105 @@ body {
 .enlace{
   color: #5a5a5a;
   text-decoration: none;
-  padding: 5px;
+  padding: 3px;
+}
+.enlace:hover{
+  color: #5a5a5a;
 }
 .icon {
-  font-size: 40px;
+  font-size: 25px;
+  text-decoration: none;
 }
+
+  a.bi-whatsapp:hover{
+border: 5px solid #00bb2d;
+box-shadow: 0 0 15px #00bb2d;
+transition: all 0.5s ease;
+}
+/* iconos #bc2a8d
+-------------------------------------------------- */
+.ul{
+  list-style: none;
+}
+.wrapper ul li{
+  list-style: none;
+  width: 45px;
+  height: 45px;
+  line-height:40px ;
+  margin: 0 6px;
+  text-align: center;
+  cursor: pointer;
+  border-radius:50% ;
+  border: 3px solid gray;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa{
+  color: gray;
+
+  transition: all 0.5s ease;
+}
+.wrapper ul li:hover.facebook{
+  border: 3px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-facebook{
+  color:  #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.whatsapp{
+  border: 3px solid  #00bb2d;
+  box-shadow: 0 0 15px  #00bb2d;
+  transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-whatsapp{
+  color:   #00bb2d;
+  text-shadow: 0 0 15px  #00bb2d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.envelope{
+  border: 3px solid #096daa;
+  box-shadow: 0 0 15px #096daa;
+  transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-envelope{
+  color:  #096daa;
+  text-shadow: 0 0 15px #096daa;
+  transition: all 0.5s ease;
+}
+
+
+
+.wrapper ul li:hover.instagram{
+  border: 3px solid #e1306c
+;
+  box-shadow: 0 0 15px#e1306c
+;
+  transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-instagram{
+  color: #e1306c
+;
+  text-shadow: 0 0 15px#e1306c
+;
+  transition: all 0.5s ease;
+}
+
+/*
 .gmail{
- 
   color: #096daa;
 }
 .insta{
 border-radius: 3px;
 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
-          /* Also define standard property for compatibility */
-          background-clip: text;
+background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-
 }
 .azul{
   color: #3b5998;
@@ -118,7 +215,7 @@ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 
 .titulo1 {
   font-size: 50px;
 }
-
+*/
 @media (max-width: 767px) {
   .titulo1 {
     font-size: 36px;
@@ -127,24 +224,24 @@ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 
 
 @media (max-width: 480px) {
   .titulo1 {
-    font-size: 1.25rem;
+    font-size: 27px;
   }
 }
 
 
 .sub {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 @media (max-width: 1014px) {
   .sub {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 817px) {
   .sub {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -167,9 +264,10 @@ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 
 .txt{
   padding-right: 325px; 
   padding-top: 20px;
+
 }
 .tyt{
-  margin-top: 76px;
+  margin-top: 32px;
 }
 
 /* RESPONSIVO
@@ -179,23 +277,36 @@ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 
   .featurette-heading {
     margin-top: 7rem;
   }
-  .imgheight{
-    width: 90%;
-    
-  }
+
   .paddingimg {
-    margin-left: 40px;
+  margin-left: 7px;
+  width: 90%;
+
   }
+}  
+
+
 .txt{ 
   padding-right:45px;
  
 }
 .hotmail{
-  font-size: 12px;
-}
+  font-size: 15px;
 }
 
-@media (max-width: 60em) {
+@media (max-width: 890px) {
+  .hotmail {
+    font-size: 12.65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hotmail {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
 
   /* texto carousel */
   .carousel-caption p {
@@ -204,24 +315,32 @@ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 
     line-height: 1.4;
   }
   .imgheight{
-    width: 90%;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
 
 .txt{
-  margin-left: 0px;
-  padding-right:0px; 
+  margin-left: 15px;
+  margin-right: auto;
+
 }
-.paddingimg {
-  margin-left: 0px;
-}
+
 .t{
-  margin-left: 0px;
+  align-self: center;
+  margin-left: 10px;
 }
 .tyt{
   margin-top: 20px;
 }
+.margenlogo{
+  margin-right: 0rem;
+}
+.hcarousel{
+  height: 85vh;
 
+ }
 }
 
 
@@ -288,7 +407,7 @@ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 
 
 .bd-placeholder-img {
   font-size: 1.125rem;
-  text-anchor: middle;
+  text-anchor: midd;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -298,4 +417,5 @@ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+
 }
